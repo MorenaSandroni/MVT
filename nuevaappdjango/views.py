@@ -7,6 +7,6 @@ from nuevaappdjango.models import Familia #importo la clase para usarla
 
 def mostrar_famlia(request):
     context = {}
-    context ["familiar"] = familia.objects.all()
-    return render (request, "nuevaappdjango/Familia.html", context)
+    context ["familia"] = Familia.objects.all()
+    return render (request, "nuevaappdjango/familia.html", context)
 

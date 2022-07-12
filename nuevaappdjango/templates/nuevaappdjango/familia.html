@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    hola, ando
-    
+
     <ul>
         {% for familiar in familia %}
             <li>
-                {{familiar}}
+                Nombre: {{familiar.nombre}} ,
+                Apellido: {{familiar.apellido}},
+               Edad: {{familiar.edad}}
             </li>
         {% endfor %}
     </ul>
